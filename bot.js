@@ -6,13 +6,12 @@ const product_url = "https://www.walmart.com/ip/3-5MM-Portable-Lavalier-Micropho
 const proxyUrl = "http://192.241.114.212:2020"; // Replace with your proxy server URL and port
 
 // Input Information below
-const email = ""; // Your email
-const password = ""; // Your password
-const cc_number = ""; // Your credit card #
-const expMonth = ""; // Expiration date
-const expYear = ""; // Expiration year
-const cvv = ""; // CVV
-
+const email = "moneymode898@gmail.com"; // Your email
+const password = "Johnson12!!"; // Your password
+const cc_number = "4427910031890145"; // Your credit card #
+const expMonth = "04"; // Expiration date
+const expYear = "24"; // Expiration year
+const cvv = "701"; // CVV
 
 puppeteer.use(StealthPlugin());
 
@@ -21,9 +20,14 @@ async function givePage() {
   process.env.HTTP_PROXY = proxyUrl;
   process.env.HTTPS_PROXY = proxyUrl;
 
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ 
+    headless: false,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    defaultViewport: null,
+   });
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1080 });
+  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36');
   return page;
 }
 
@@ -97,7 +101,7 @@ async function checkout() {
   try {
     const page = await givePage();
     await addToCart(page);
-    console.log("Succesfully added to cart");
+    console.log("Succesfully addded to cart");
     await fillEmail(page);
     console.log("Email info: COMPLETE");
     await fillPass(page);
