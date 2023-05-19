@@ -2,10 +2,9 @@ Checkout Bot for Walmart(GUEST CHECKOUT)
 
 This program performs an 'autocomplete' of the neccessary information
 needed make a purchase on the Walmart website using Node.js and Puppeteer.
-Since this program is specifically for a 'Guest Checkout' the program request 
-the users information such as firstName, lastName, etc., 
-and when the browser is loaded, it inputs that information 
-and creates a new account. The purpose of this project
+In this program, you will enter your credentials, and the link of the item
+that you want. When you run the bot, it will automatically fill in the information.
+The purpose of this project
 is to make it easier for me to checkout items that I want.
 **Eventually I'll create a webpage that you can input this info into** 
 
