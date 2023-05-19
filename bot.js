@@ -6,12 +6,12 @@ const product_url = "https://www.walmart.com/ip/3-5MM-Portable-Lavalier-Micropho
 const proxyUrl = "http://192.241.114.212:2020"; // Replace with your proxy server URL and port
 
 // Input Information below
-const email = "moneymode898@gmail.com"; // Your email
-const password = "Johnson12!!"; // Your password
-const cc_number = "4427910031890145"; // Your credit card #
-const expMonth = "04"; // Expiration date
-const expYear = "24"; // Expiration year
-const cvv = "701"; // CVV
+const email = ""; // Your email
+const password = ""; // Your password
+const cc_number = ""; // Your credit card #
+const expMonth = ""; // Expiration date
+const expYear = ""; // Expiration year
+const cvv = ""; // CVV
 
 puppeteer.use(StealthPlugin());
 
