@@ -96,7 +96,6 @@ async function submitOrder(page) {
 async function checkout() {
   try {
     const page = await givePage();
-    const page = await givePage();
     await addToCart(page);
     console.log("Succesfully added to cart");
     await fillEmail(page);
