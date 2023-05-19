@@ -96,11 +96,17 @@ async function submitOrder(page) {
 async function checkout() {
   try {
     const page = await givePage();
+    const page = await givePage();
     await addToCart(page);
+    console.log("Succesfully added to cart");
     await fillEmail(page);
+    console.log("Email info: COMPLETE");
     await fillPass(page);
+    console.log("Password info: COMPLETE");
     await fillPayment(page);
+    console.log("Payment info: COMPLETE");
     await submitOrder(page);
+    console.log("Checkout: COMPLETE");
   } catch (error) {
     console.error("An error occurred during the checkout:", error);
   }
