@@ -18,7 +18,7 @@ Prerequisities
 
 Installation Instructions
 
-1. Clone the repository from GitHub https://github.com/MirMoneyJ/walmartGuestBot
+1. Clone the repository from GitHub https://github.com/MirMoneyJ/walmartCheckout
 2. Make sure all the required imports and npm installs are present
 3. Fill in the user information at the top
 4. run 'node bot.js' to start
