@@ -5,13 +5,12 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const product_url = "https://www.walmart.com/ip/3-5MM-Portable-Lavalier-Microphone-Clip-on-Omnidirectional-Mic-for-Smartphone/3014040882?from=/search"; // Item you want 
 const proxyUrl = "http://192.241.114.212:2020"; // Replace with your proxy server URL and port
 
-// Input Information below
-const email = ""; // Your email
-const password = ""; // Your password
-const cc_number = ""; // Your credit card #
-const expMonth = ""; // Expiration date
-const expYear = ""; // Expiration year
-const cvv = ""; // CVV
+const email = "AAAAA"; // Your email
+const password = "AAAAA"; // Your password
+const cc_number = "AAAAA"; // Your credit card #
+const expMonth = "AAAAA"; // Expiration date
+const expYear = "AAAAA"; // Expiration year
+const cvv = "AAAAA"; // CVV
 
 puppeteer.use(StealthPlugin());
 
